@@ -49,7 +49,7 @@
                     </p>
                     <a href="ben-braner-CV.pdf" download>
                          <button class="main__btn">Download CV </button>
-                       </a>
+                    </a>
                </div>
                <div class="main__img--container">
                     <img src="./assets/undraw_feeling_proud_qne1.png" alt="" id="main__img">
@@ -165,7 +165,7 @@
                </div>
 
                <div class="project-container" data-url="https://heroes-search-app.netlify.app">
-                    <img class="project-img" src="./assets/proyecto-heroesapp.png" alt="">
+                    <img class="project-img" src="./assets/proyecto-heroesapp.jpeg" alt="">
                     <div class="project-desc">
                          <div class="project-features">
                               <h4 class="project-title">Heroes App</h4>
@@ -185,6 +185,8 @@
                     <textarea name="comments" cols="30" rows="10" placeholder="Message"
                          class="contact__input"></textarea>
                     <input value="Send" type="submit" class="contact__input btn-send-form">
+                    <input type="hidden" name="_next" value="https://benbraner.netlify.app/">
+                    <input type="hidden" name="_captcha" value="false">
                </form>
           </div>
      </section>
@@ -199,6 +201,7 @@
                          src="./assets/facebook.svg" alt=""></a>
           </div>
           <p>benjamin.branner@gmail.com</p>
+          <p>+591 76051713</p>
      </footer>
 
 
@@ -210,12 +213,26 @@
           rel="stylesheet">
      <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
      <script>
-          const menu = document.querySelector("#mobile-menu")
-          const menuLinks = document.querySelector(".navbar__menu")
+          const menu = document.querySelector("#mobile-menu");
+          const menuLinks = document.querySelector(".navbar__menu");
           menu.addEventListener("click", () => {
-               menu.classList.toggle("is-active")
+               menu.classList.toggle("is-active");
                menuLinks.classList.toggle("active");
           })
+
+          const contactBtn = document.querySelector(".button")
+          contactBtn.addEventListener("click", () => {
+               menuLinks.classList.toggle("active")
+          })
+
+          const navbarLinks = document.querySelectorAll(".navbar__links")
+          navbarLinks.forEach(link => {
+
+               link.addEventListener('click', () => {
+                    menuLinks.classList.toggle("active");
+               });
+          });
+
 
           const projectContainers = document.querySelectorAll('.project-container');
 
