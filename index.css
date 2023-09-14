@@ -20,12 +20,12 @@ section {
      justify-content: center;
      align-items: center;
      font-size: 1.3rem;
-     position: fixed;
+     position: sticky;
      top: 0;
      z-index: 999;
      box-shadow: 1px 1px 7px #e3e3e3;
      width: 100%;
-     /* margin-bottom: 0.1px; */
+     /* margin-bottom: 80px; */
 }
 
 .navbar__container {
@@ -127,11 +127,9 @@ section {
           position: absolute;
           top: -1000px;
           opacity: 0;
-          /*defines the transparence of the element*/
           transition: all 0.5s ease;
           height: 50vh;
           z-index: -1;
-          /*-1 means that it´ll be behind of all the elements with a z-index higher*/
      }
 
      .navbar__menu.active {
@@ -216,6 +214,7 @@ section {
      align-items: center;
      justify-self: center;
      margin: 0 auto;
+     /* margin-top: 80px; */
      min-height: 90vh;
      z-index: 1;
      width: 100%;
@@ -270,20 +269,22 @@ section {
 @media screen and (max-width: 1150px) {
      .main__container {
           padding: 0 80px;
+          /* margin-top: 80px; */
+
      }
 }
 
 
 @media screen and (max-width: 768px) {
      .main__container {
+          /* margin-top: 80px; */
+
           display: grid;
           grid-template-columns: auto;
-          /* grid-template-rows: 1fr 1fr; */
           align-items: center;
           justify-self: center;
           width: 100%;
           margin: 0 auto;
-          /* height: 90vh; */
           padding: 0 50px;
      }
 
@@ -359,7 +360,6 @@ section {
 /* Skills section */
 .skills {
      min-height: calc(100vh - 80px);
-     /*navbar-size*/
      max-width: 1300px;
      margin: 0 auto;
      display: grid;
@@ -380,14 +380,12 @@ section {
 }
 
 .technologies {
-     /* background-color: antiquewhite; */
      display: flex;
      flex-direction: column;
      gap: 20px
 }
 
 .technology {
-     /* border: 1px solid black; */
      border-radius: 3px;
      display: flex;
      font-size: 22px;
@@ -478,16 +476,9 @@ section {
      color: #fff;
 }
 
-
-
 .plans {
      display: flex;
      flex-direction: column;
-     /* background-color: red; */
-     /* justify-content: space-evenly;
-     margin: auto;
-     margin-top: 10%;
-     gap: 90px; */
      margin-bottom: 70px;
      margin-left: 24.5px;
      margin-right: 24.5px;
@@ -497,7 +488,6 @@ section {
 .plans-container {
      display: flex;
      flex-direction: row;
-     /* background-color: red; */
      justify-content: space-evenly;
      margin: auto;
      margin-top: 50px;
@@ -505,14 +495,15 @@ section {
 }
 
 .pack-container {
-     width: 300px;
-     /* height: 254px; */
+     width: 350px;
      border-radius: 30px;
-     background: #e0e0e0;
-     box-shadow: 15px 15px 30px #bebebe,
-          -15px -15px 30px #ffffff;
+     /* background: #f9f9f9; */
+     box-shadow: 10px 10px 20px #e3e3e3,
+          -10px -10px 20px #ffffff;
      padding: 1.5rem;
-
+     padding-bottom: 5rem;
+     position: relative;
+     border: 1px solid #9475f1;
 }
 
 .pack-container:hover {
@@ -539,7 +530,6 @@ section {
      font-size: 0.875rem;
      line-height: 1.25rem;
      text-transform: uppercase;
-     /* color: #fff */
 }
 
 .price-container {
@@ -568,7 +558,7 @@ section {
 .lists {
      display: flex;
      flex-direction: column;
-     gap: 8px;
+     gap: 15px;
 }
 
 .list {
@@ -595,19 +585,20 @@ section {
 
 .list p {
      display: block;
-     /* font-family: sans-serif; */
 }
 
 .button-container {
      margin-top: 20px;
      padding: 0;
-     /* position: absolute; */
-     /* bottom: 30px; */
+     position: absolute;
+     bottom: 1.5rem;
+     left: 50%;
+     transform: translateX(-50%)
 }
 
 .button-container button {
      display: block;
-     width: 100%;
+     width: 200px;
      background-color: #673de6;
      padding: 10px 20px;
      text-transform: uppercase;
@@ -630,7 +621,6 @@ section {
      background-color: #fc5185;
      border-radius: 25px;
      display: flex;
-     /* font-family: sans-serif; */
      justify-content: center;
      padding: 10px;
      color: #fff;
@@ -656,10 +646,8 @@ section {
           flex-direction: column;
           align-items: center;
           justify-content: center;
-          /* background-color: red; */
           width: 100%;
      }
-
 }
 
 a {
