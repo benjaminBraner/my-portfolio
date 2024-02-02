@@ -11,7 +11,7 @@
 
 <body>
      <!-- navbar section -->
-     <nav class="navbar">
+     <nav class="navbar navbar--shadow">
           <div class="navbar__container">
                <a href="/" id="navbar__logo"></i>Ben Braner</a>
                <div class="navbar__toggle" id="mobile-menu">
@@ -40,47 +40,66 @@
      </nav>
 
      <!-- hero section -->
-     <section class="main animate__animated animate__fadeIn" id="home">
-          <div class="main__container">
-               <div class="main__content">
-                    <h1 class="main__name">Front-end React developer</h1>
-                    <!-- <p class="main__dev">Frontend developer</p> -->
-                    <p class="main__desc">Hi, I'm Benjamin Braner. A passionate Front-end React
-                         developer based in Santa Cruz - Bolivia
-                    </p>
-                    <a href="benjamin-braner-CV.pdf" download>
-                         <button class="main__btn">Download CV </button>
-                    </a>
-               </div>
-               <div class="main__img--container">
-                    <img src="./assets/undraw_feeling_proud_qne1.png" alt="" id="main__img">
-               </div>
+     <section class="main  animate__animated animate__fadeIn" id="home">
+          <div class="main__content">
+               <h1 class="main__name">Front-end React developer</h1>
+               <p class="main__desc">Hi, I'm Benjamin Braner. A passionate Front-end React
+                    developer based in Santa Cruz - Bolivia
+               </p>
+               <a href="benjamin-braner-CV.pdf" download>
+                    <button class="main__btn">Download CV </button>
+               </a>
+               <a href="#portfolio">
+                    <button class="main__btn btn-portfolio">Portfolio </button>
+               </a>
+          </div>
+          <div class="main__img--container">
+               <img src="./assets/undraw_feeling_proud_qne1.png" alt="" id="main__img">
           </div>
      </section>
 
-     <!-- <section class="aboutme">
-          <div class="aboutme-container">
-               <img src="./assets/about-me.jpg" alt="About Me">
-               
+     <!-- About Me -->
+     <section class="about">
+          <div class="section__container about__container">
+               <div class="about__image">
+                    <img src="assets/undraw_Coding_re_iv62.png" alt="about" />
+               </div>
+               <div class="about__content">
+                    <h2 class="section__title">About <span>Me</span></h2>
+                    <p class="section__subtitle">Creative Web Developer/Designer</p>
+                    <p class="about__details">
+                         As a UI/UX designer, I specialize in creating user interfaces and
+                         experiences for digital products. I have extensive experience
+                         working with product managers, developers, and other stakeholders to
+                         gather requirements, create wireframes and prototypes, and conduct
+                         user testing to ensure that the final product meets the needs of the
+                         users. Throughout my career, I have achieved several milestones,
+                         including designing successful digital products that have received
+                         positive feedback from users and stakeholders.
+                    </p>
+               </div>
           </div>
-     </section> -->
+     </section>
 
      <!-- Attributes Section -->
      <section class="attributes" id="services">
           <div class="attribute-container">
                <img class="attribute-logo" src="./assets/devices.svg" alt="attribute-logo">
-               <h3 class="attribute-title">Adaptative</h3>
-               Enhance your website with an optimal user experience on all devices. Make it responsive!
+               <h3 class="attribute-title">Web Design</h3>
+               I am dedicated to providing high-quality web design services
+               that are tailored to meet the specific needs of my clients.
           </div>
           <div class="attribute-container">
                <img class="attribute-logo" src="./assets/brush.svg" alt="attribute-logo">
-               <h3 class="attribute-title">High Quality</h3>
-               Stand out from the competition with a high-quality website
+               <h3 class="attribute-title">Web Development</h3>
+               I use the latest web technologies and development tools to create
+               websites that are fast, secure, and scalable.
           </div>
           <div class="attribute-container three">
                <img class="attribute-logo" src="./assets/bulb.svg" alt="attribute-logo">
-               <h3 class="attribute-title">Great Ideas</h3>
-               Highlight your brand online with a high-impact website. Innovation and creativity at your fingertips!
+               <h3 class="attribute-title">Creative Design</h3>
+               My approach is responsive, and I encourage your feedback throughout the design process to ensure that I
+               am meeting your expectations.
           </div>
      </section>
 
@@ -88,48 +107,46 @@
      <section class="skills animate__animated animate__fadeIn" id="skills">
           <div class="skills__text">
                <h4 class="skills__title">Skills</h4>
-               <p class="skills__desc">These are the technologies that I have learned over time, some of them I am still
-                    learning but I always learn every day</p>
-               <div class="technologies">
-                    <div class="technology">
-                         <div class="tech-container">
-                              <img src="./assets/html.svg" alt="html">
-                              HTML
-                         </div>
-                         <div class="skill-percentage">95%</div>
+               <p class="skills__desc">These are the technologies that I have learned over time
+               <div class="technology">
+                    <div class="tech-container">
+                         <img src="./assets/html.svg" alt="html">
+                         HTML
                     </div>
-                    <div class="technology">
-                         <div class="tech-container">
-                              <img src="./assets/css.svg" alt="css">
-                              CSS
-
-                         </div>
-                         <div class="skill-percentage">87%</div>
-                    </div>
-                    <div class="technology">
-                         <div class="tech-container">
-                              <img src="./assets/js.svg" alt="javascript">
-                              JAVASCRIPT
-
-                         </div>
-                         <div class="skill-percentage">90%</div>
-                    </div>
-                    <div class="technology">
-                         <div class="tech-container">
-                              <img src="./assets/react.svg" alt="react">
-                              REACT
-
-                         </div>
-                         <div class="skill-percentage">73%</div>
-                    </div>
-                    <div class="technology">
-                         <div class="tech-container">
-                              <img src="./assets/python.svg" alt="python">
-                              PYTHON
-                         </div>
-                         <div class="skill-percentage">88%</div>
-                    </div>
+                    <div class="skill-percentage">95%</div>
                </div>
+               <div class="technology">
+                    <div class="tech-container">
+                         <img src="./assets/css.svg" alt="css">
+                         CSS
+
+                    </div>
+                    <div class="skill-percentage">87%</div>
+               </div>
+               <div class="technology">
+                    <div class="tech-container">
+                         <img src="./assets/js.svg" alt="javascript">
+                         JAVASCRIPT
+
+                    </div>
+                    <div class="skill-percentage">90%</div>
+               </div>
+               <div class="technology">
+                    <div class="tech-container">
+                         <img src="./assets/react.svg" alt="react">
+                         REACT
+
+                    </div>
+                    <div class="skill-percentage">73%</div>
+               </div>
+               <div class="technology">
+                    <div class="tech-container">
+                         <img src="./assets/python.svg" alt="python">
+                         PYTHON
+                    </div>
+                    <div class="skill-percentage">88%</div>
+               </div>
+          </div>
           </div>
           <div class="skills_img-container">
                <img class="skills_img" src="./assets/undraw_Coding_re_iv62.png" alt="">
@@ -184,171 +201,6 @@
           </div>
      </section>
 
-     <!-- Plans Section
-     <section class="plans">
-          <div class="plans-title">
-               <h4 class="skills__title">Plans</h4>
-               <p class="skills__desc">You can send an email telling me which plan are you interested in</p>
-
-          </div>
-
-          <div class="plans-container">
-               <div class="pack-container">
-                    <div class="header">
-                         <p class="title">
-                              Starter
-                         </p>
-                         <div class="price-container">
-                              <span>$</span>99
-                         </div>
-                    </div>
-                    <div>
-                         <ul class="lists">
-                              <li class="list">
-                                   <img src="/assets/checked.svg" class="checked-icon" alt="">
-                                   <p>
-                                        Beautiful static web page with a custom design.
-                                   </p>
-                              </li>
-                              <li class="list">
-                                   <img src="/assets/checked.svg" class="checked-icon" alt="">
-                                   <p>
-                                        Responsive design for mobile and desktop
-                              </li>
-                              <li class="list">
-                                   <img src="/assets/checked.svg" class="checked-icon" alt="">
-                                   <p>
-                                        3 sections in your web
-                                   </p>
-                              </li>
-                              <li class="list">
-                                   <img src="assets/x.svg" class="checked-icon" alt="">
-                                   <p>
-                                        Hosting management
-                                   </p>
-                              </li>
-                              <li class="list">
-                                   <img src="/assets/checked.svg" class="checked-icon" alt="">
-                                   <p>
-                                        Basic search engine optimization (SEO).
-                                   </p>
-                              </li>
-                         </ul>
-                    </div>
-                    <div class="button-container">
-                         <a href="#contact">
-                              <button type="button">
-                                   Buy Now
-                              </button>
-                         </a>
-                    </div>
-               </div>
-
-
-               <div class="pack-container">
-                    <p class="recommended">Recommended</p>
-                    <div class="header">
-                         <p class="title">
-                              Medium
-                         </p>
-                         <div class="price-container">
-                              <span>$</span>149
-                         </div>
-                    </div>
-                    <div>
-                         <ul class="lists">
-                              <li class="list">
-                                   <img src="/assets/checked.svg" class="checked-icon" alt="">
-                                   <p>
-                                        Dynamic web page (contact forms, image galleries, etc.).
-                                   </p>
-                              </li>
-                              <li class="list">
-                                   <img src="/assets/checked.svg" class="checked-icon" alt="">
-                                   <p>
-                                        Up to 10 content sections.
-                                   </p>
-                              </li>
-                              <li class="list">
-                                   <img src="/assets/checked.svg" class="checked-icon" alt="">
-                                   <p>
-                                        Content management system (CMS)
-                                   </p>
-                              </li>
-                              <li class="list">
-                                   <img src="/assets/checked.svg" class="checked-icon" alt="">
-                                   <p>
-                                        Social media icons and links to profiles.
-                                   </p>
-                              </li>
-                         </ul>
-                    </div>
-                    <div class="button-container">
-                         <a href="#contact">
-                              <button type="button" id="btn-medium">
-                                   Buy Now
-                              </button>
-                         </a>
-                    </div>
-               </div>
-
-
-               <div class="pack-container">
-                    <div class="header">
-                         <p class="title">
-                              Premium
-                         </p>
-                         <div class="price-container">
-                              <span>$</span>199
-                         </div>
-                    </div>
-                    <div>
-                         <ul class="lists">
-                              <li class="list">
-                                   <img src="/assets/checked.svg" class="checked-icon" alt="">
-                                   <p>
-                                        Highly personalized and exclusive design
-                                   </p>
-                              </li>
-                              <li class="list">
-                                   <img src="/assets/checked.svg" class="checked-icon" alt="">
-                                   <p>
-                                        additional pages (blog, shopping cart, API
-                                        integration, etc.).
-                                   </p>
-                              </li>
-                              <li class="list">
-                                   <img src="/assets/checked.svg" class="checked-icon" alt="">
-                                   <p>
-                                        animations and advanced visual effects.
-                                   </p>
-                              </li>
-                              <li class="list">
-                                   <img src="/assets/checked.svg" class="checked-icon" alt="">
-                                   <p>
-                                        Advanced optimization for SEO and performance.
-                                   </p>
-                              </li>
-                              <li class="list">
-                                   <img src="/assets/checked.svg" class="checked-icon" alt="">
-                                   <p>
-                                        Priority support and direct communication.
-                                   </p>
-                              </li>
-                         </ul>
-                    </div>
-                    <div class="button-container">
-                         <a href="#contact">
-                              <button type="button">
-                                   Buy Now
-                              </button>
-                         </a>
-                    </div>
-               </div>
-          </div>
-     </section> -->
-
-
      <section class="contact animate__animated animate__fadeIn" id="contact">
           <h4 class="skills__title">Contact me</h4>
           <div class="form-container">
@@ -388,6 +240,18 @@
           rel="stylesheet">
      <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
      <script>
+          document.addEventListener("DOMContentLoaded", function () {
+               const navbar = document.querySelector(".navbar");
+
+               window.addEventListener("scroll", function () {
+                    if (window.scrollY === 0) {
+                         navbar.classList.remove("navbar--shadow");
+                    } else {
+                         navbar.classList.add("navbar--shadow");
+                    }
+               });
+          });
+
           const menu = document.querySelector("#mobile-menu");
           const menuLinks = document.querySelector(".navbar__menu");
           menu.addEventListener("click", () => {
