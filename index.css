@@ -799,6 +799,7 @@ section {
 }
 
 .portfolio {
+     color: var(--light-text-color);
      max-width: 1300px;
      margin: 0 auto;
      min-height: calc(100vh - 80px);
