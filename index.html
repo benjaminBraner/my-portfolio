@@ -9,7 +9,7 @@
      <link rel="stylesheet" type="text/css" href="index.css">
 </head>
 
-<body>
+<body class="light-theme">
      <!-- navbar section -->
      <nav class="navbar navbar--shadow">
           <div class="navbar__container">
@@ -35,9 +35,16 @@
                     <li class="navbar__btn">
                          <a href="#contact" class="button">Contact</a>
                     </li>
+<li class=" navbar__item theme">
+  <input type="checkbox" class="input" id="themeToggle">
+  <img src="./assets/moon.svg" alt="" class="icon icon-toggle-theme icon-moon">
+  <img src="./assets/sun.svg" alt="" class="icon icon-toggle-theme icon-sun">
+</li>
                </ul>
           </div>
      </nav>
+
+
 
      <!-- hero section -->
      <section class="main  animate__animated animate__fadeIn" id="home">
@@ -54,7 +61,7 @@
                </a>
           </div>
           <div class="main__img--container">
-               <img src="./assets/undraw_feeling_proud_qne1.png" alt="" id="main__img">
+               <img src="./assets/man-computer.png" alt="" id="main__img">
           </div>
      </section>
 
@@ -62,11 +69,31 @@
      <section class="about">
           <div class="section__container about__container">
                <div class="about__image">
-                    <img src="assets/undraw_Coding_re_iv62.png" alt="about" />
+                    <img src="assets/man-headphones.png" alt="about" />
                </div>
                <div class="about__content">
                     <h2 class="section__title">About <span>Me</span></h2>
                     <p class="section__subtitle">Web Developer</p>
+                    <div class="about-containers">
+                         <div class="details-container">
+                           <img
+                             src="./assets/experience.png"
+                             alt="Experience icon"
+                             class="icon icon-aboutme"
+                           />
+                           <h3>Experience</h3>
+                           <p>2+ years <br />Frontend Development</p>
+                         </div>
+                         <div class="details-container">
+                           <img
+                             src="./assets/education.png"
+                             alt="Education icon"
+                             class="icon icon-aboutme"
+                           />
+                           <h3>Education</h3>
+                           <p>Univalle Colleage student</p>
+                         </div>
+                       </div>
                     <p class="about__details">
                          I'm a junior developer passionate about React. I am eager to learn and grow in the field. I am
                          a quick learner and have great problem-solving skills. I am motivated to work on challenging
@@ -78,43 +105,47 @@
           </div>
      </section>
 
+
+
      <!-- Attributes Section -->
      <section class="attributes" id="services">
           <div class="attribute-container">
-               <img class="attribute-logo" src="./assets/devices.svg" alt="attribute-logo">
+               <img class="icon attribute-logo" src="./assets/devices.svg" alt="attribute-logo">
                <h3 class="attribute-title">Web Design</h3>
                I am dedicated to providing high-quality web design services
                that are tailored to meet the specific needs of my clients.
           </div>
           <div class="attribute-container">
-               <img class="attribute-logo" src="./assets/brush.svg" alt="attribute-logo">
+               <img class="icon attribute-logo" src="./assets/brush.svg" alt="attribute-logo">
                <h3 class="attribute-title">Web Development</h3>
                I use the latest web technologies and development tools to create
                websites that are fast, secure, and scalable.
           </div>
           <div class="attribute-container three">
-               <img class="attribute-logo" src="./assets/bulb.svg" alt="attribute-logo">
+               <img class="icon attribute-logo" src="./assets/bulb.svg" alt="attribute-logo">
                <h3 class="attribute-title">Creative Design</h3>
                My approach is responsive, and I encourage your feedback throughout the design process to ensure that I
                am meeting your expectations.
           </div>
      </section>
 
+
+
      <!-- Skills Section -->
      <section class="skills animate__animated animate__fadeIn" id="skills">
           <div class="skills__text">
-               <h4 class="skills__title">Skills</h4>
+               <h4 class="section__title ">Skills</h4>
                <p class="skills__desc">These are the technologies that I have learned over time
                <div class="technology">
                     <div class="tech-container">
-                         <img src="./assets/html.svg" alt="html">
+                         <img src="./assets/html.svg" alt="html" class="icon">
                          HTML
                     </div>
                     <div class="skill-percentage">95%</div>
                </div>
                <div class="technology">
                     <div class="tech-container">
-                         <img src="./assets/css.svg" alt="css">
+                         <img src="./assets/css.svg" alt="css" class="icon">
                          CSS
 
                     </div>
@@ -122,7 +153,7 @@
                </div>
                <div class="technology">
                     <div class="tech-container">
-                         <img src="./assets/js.svg" alt="javascript">
+                         <img src="./assets/js.svg" alt="javascript" class="icon">
                          JAVASCRIPT
 
                     </div>
@@ -130,7 +161,7 @@
                </div>
                <div class="technology">
                     <div class="tech-container">
-                         <img src="./assets/react.svg" alt="react">
+                         <img src="./assets/react.svg" alt="react" class="icon">
                          REACT
 
                     </div>
@@ -138,7 +169,7 @@
                </div>
                <div class="technology">
                     <div class="tech-container">
-                         <img src="./assets/git.svg" alt="git">
+                         <img src="./assets/git.svg" alt="git" class="icon">
                          GIT
                     </div>
                     <div class="skill-percentage">88%</div>
@@ -146,74 +177,61 @@
           </div>
           </div>
           <div class="skills_img-container">
-               <img class="skills_img" src="./assets/undraw_Coding_re_iv62.png" alt="">
+               <img class="skills_img" src="./assets/man-headphones.png" alt="">
           </div>
      </section>
 
-     <!-- Projects Section -->
-     <section class="portfolio animate__animated animate__fadeIn" id="portfolio">
-          <h4 class="skills__title">Projects</h4>
-          <p></p>
-          <div class="projects">
-               <div class="project-container" data-url="https://dobler.netlify.app/">
-                    <img class="project-img" src="./assets/proyecto-doblerapp.jpg" alt="">
-                    <div class="project-desc">
-                         <div class="project-features">
-                              <h4 class="project-title">Barbershop</h4>
-                              <p>REACT JS</p>
-                         </div>
-                    </div>
 
+
+      <!--Slider test -->
+      <section class="projects-slider" id="portfolio">
+          <h4 class="section__title">Projects</h4>
+          <div class="slider__section">
+          
+          <div class="slider" reverse="true" style="
+            --width: 500px;
+            --height: 500px;
+            --quantity: 5;
+        ">
+            <div class="list">
+                <div class="item" style="--position: 1" data-url="https://dobler.netlify.app/">
+                    <img src="assets/proyecto-doblerapp.jpg" alt="" >
+                    <h4>Barbershop</h4>
+                              <p>REACT JS</p>
                </div>
-               <div class="project-container" data-url="https://gymshark-app.netlify.app/">
-                    <img class="project-img" src="./assets/proyecto-gymshark.jpg" alt="gymshark">
-                    <div class="project-desc">
-                         <div class="project-features">
-                              <h4 class="project-title">Gym Wear Shop</h4>
+                <div class="item" style="--position: 2" data-url="https://gymshark-app.netlify.app/">
+                    <img src="assets/proyecto-gymshark.jpg" alt="" >
+                    <h4>Gym Wear Shop</h4>
                               <p>HTML, CSS, JS advanced</p>
-                         </div>
-                    </div>
-
                </div>
-               <div class="project-container" data-url="https://your-tree.netlify.app/">
-                    <img class="project-img" src="./assets/proyecto-plantsapp.png" alt="YourTree">
-                    <div class="project-desc">
-                         <div class="project-features">
-                              <h4 class="project-title">Plants E-commerce</h4>
+                <div class="item" style="--position: 3" data-url="https://heroes-search-app.netlify.app">
+                    <img src="assets/proyecto-heroesapp.png" alt="" >
+                    <h4>Heroes App</h4>
+                    <p>REACT JS</p>
+               </div>
+                <div class="item" style="--position: 4" data-url="https://your-tree.netlify.app/">
+                    <img src="assets/proyecto-plantsapp.png" alt="" >
+                    <h4>Plants E-commerce</h4>
+                    <p>REACT JS</p>
+               </div>
+                <div class="item" style="--position: 5" data-url="https://servforu.netlify.app">
+                    <img src="assets/proyecto-servforu.png" alt="" >
+                    <h4>Request to digitalize your business</h4>
                               <p>REACT JS</p>
-                         </div>
-                    </div>
-
                </div>
-               <div class="project-container" data-url="https://servforu.netlify.app">
-                    <img class="project-img" src="./assets/proyecto-servforu.jpg" alt="ServForU">
-                    <div class="project-desc">
-                         <div class="project-features">
-                              <h4 class="project-title">Request to digitalize your business</h4>
-                              <p>REACT JS</p>
-                         </div>
-                    </div>
-
-               </div>
-
-               <div class="project-container" data-url="https://heroes-search-app.netlify.app">
-                    <img class="project-img" src="./assets/proyecto-heroesapp.jpeg" alt="">
-                    <div class="project-desc">
-                         <div class="project-features">
-                              <h4 class="project-title">Heroes App</h4>
-                              <p>REACT JS</p>
-                         </div>
-                    </div>
-               </div>
-          </div>
+            </div>
+        </div>
+     </div>
      </section>
+
+
 
      <section class="contact animate__animated animate__fadeIn" id="contact">
-          <h4 class="skills__title">Contact me</h4>
+          <h4 class="section__title">Contact me</h4>
           <div class="form-container">
                <form action="https://formsubmit.co/benjamin.branner@gmail.com" class="contact__form" method="POST">
-                    <input type="text" placeholder="Name" class="contact__input" name="name">
-                    <input type="email" placeholder="Email" class="contact__input" name="email">
+                    <input type="text" placeholder="Name" class="contact__input" name="name" autocomplete="off">
+                    <input type="email" placeholder="Email" class="contact__input" name="email" autocomplete="off">
                     <textarea name="comments" cols="30" rows="10" placeholder="Message"
                          class="contact__input"></textarea>
                     <input value="Send" type="submit" class="contact__input btn-send-form">
@@ -223,17 +241,19 @@
           </div>
      </section>
 
+
+
      <footer class="footer">
           <p class="footer__title">Benjamin</p>
           <div class="footer__social">
                <a href="https://www.instagram.com/benjaminbraner/" class="footer__icon"><img
-                         src="./assets/instagram.svg" alt="instagram"></a>
+                         src="./assets/instagram.svg" alt="instagram" class="icon"></a>
                <a href="https://wa.me/+59176051713" class="footer__icon"><img src="./assets/whatsapp.svg"
-                         alt="whatsapp"></a>
+                         alt="whatsapp" class="icon"></a>
                <a href="https://www.facebook.com/benjamin.brennermolina" class="footer__icon"><img
-                         src="./assets/facebook.svg" alt="facebook"></a>
+                         src="./assets/facebook.svg" alt="facebook" class="icon"></a>
                <a href="https://www.linkedin.com/in/benjamin-braner-molina-60695b245/" class="footer__icon"><img
-                         src="./assets/linkedin.svg" alt="linkedin"></a>
+                         src="./assets/linkedin.svg" alt="linkedin" class="icon"></a>
           </div>
           <p>benjamin.branner@gmail.com</p>
           <p>+591 76051713</p>
@@ -246,7 +266,31 @@
      <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Kumbh+Sans:wght@400;700&display=swap"
           rel="stylesheet">
      <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
+
+
+
      <script>
+
+// Obtener el checkbox
+const themeToggle = document.getElementById('themeToggle');
+
+// Agregar un listener para detectar el cambio de tema
+themeToggle.addEventListener('click', toggleTheme);
+
+// Función para alternar entre dark y light theme
+function toggleTheme() {
+    const body = document.body;
+    if (body.classList.contains('dark-theme')) {
+        body.classList.remove('dark-theme');
+        body.classList.add('light-theme');
+    } else {
+        body.classList.remove('light-theme');
+        body.classList.add('dark-theme');
+    }
+}
+
+
+
           document.addEventListener("DOMContentLoaded", function () {
                const navbar = document.querySelector(".navbar");
 
@@ -290,6 +334,25 @@
                     window.open(url, '_blank');
                });
           });
+
+
+
+          // Seleccionamos todos los elementos con la clase 'item'
+const items = document.querySelectorAll('.item');
+
+// Añadimos un evento de clic a cada 'item'
+items.forEach(item => {
+    item.addEventListener('click', () => {
+        // Obtenemos el valor del atributo 'data-url'
+        const url = item.getAttribute('data-url');
+        
+        // Si existe una URL, abrimos en una nueva pestaña
+        if (url) {
+            window.open(url, '_blank');
+        }
+    });
+});
+
      </script>
      <script src="https://kit.fontawesome.com/802bbb6821.js" crossorigin="anonymous"></script>
 </body>
