@@ -10,9 +10,9 @@
      --dark-text-color: #f1f1f1;
      --light-text-color: #e5e5e5;
      --primary-color-icon: invert(88%) sepia(88%) saturate(1%) hue-rotate(185deg) brightness(110%) contrast(97%);
-
      --navbar-shadow-color: #242424;
-     --navbar-background-blur: rgba(0, 0, 0, 0.866);
+     --navbar-border-color: #242424;
+     --navbar-background-blur: rgba(15, 15, 15, 0.8);
      --box-color: #1d1d1d;
      --input-text-color: #f3f3f3;
  }
@@ -24,8 +24,9 @@
      --light-text-color: #555555;
      --navbar-shadow-color: #d3d3d3;
      --primary-color-icon: invert(21%) sepia(0%) saturate(0%) hue-rotate(343deg) brightness(98%) contrast(83%);
+     --navbar-border-color: #e1e1e1;
 
-     --navbar-background-blur: rgba(253, 253, 253, 0.866);
+     --navbar-background-blur: rgba(239, 239, 239, 0.8);
 
      --box-color: #f3f3f3;
 
@@ -70,6 +71,10 @@ section {
      margin: auto;
      transition: all 0.5s ease;
      background-color: var(--navbar-background-blur);
+     backdrop-filter: blur(3px);
+     -webkit-backdrop-filter: blur(3px); /* Para Safari */
+     border: 1px solid var(--navbar-border-color);
+
 
 }
 
@@ -80,12 +85,11 @@ section {
 .navbar.navbar-on-top{
      position: sticky;
      width: 100%;
-
+     border-radius: 0%;
+     border: none;
      top: 0;
      background-color: var(--main-color);
-}
-.navbar--shadow {
-     box-shadow: 1px 1px 7px var(--navbar-shadow-color);
+     box-shadow: none;
 }
 
 .navbar__container {

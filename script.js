@@ -15,17 +15,15 @@ function toggleTheme() {
 }
 
 
-// Navbar bottom shadow-----------------------------------------------------------
+// Navbar scroll-----------------------------------------------------------
+
 document.addEventListener('DOMContentLoaded', function () {
 	const navbar = document.querySelector('.navbar')
 
 	window.addEventListener('scroll', function () {
 		if (window.scrollY === 0) {
-			navbar.classList.remove('navbar--shadow')
 			navbar.classList.add('navbar-on-top')
-
 		} else {
-			navbar.classList.add('navbar--shadow')
 			navbar.classList.remove('navbar-on-top')
 
 		}
@@ -33,10 +31,7 @@ document.addEventListener('DOMContentLoaded', function () {
 })
 
 
-
-
-
-
+//Navbar hidden
 let lastScrollY = window.scrollY;
 
 window.addEventListener('scroll', () => {
@@ -87,16 +82,11 @@ projectContainers.forEach((container) => {
 	})
 })
 
-// Seleccionamos todos los elementos con la clase 'item'
 const items = document.querySelectorAll('.item')
 
-// Añadimos un evento de clic a cada 'item'
 items.forEach((item) => {
 	item.addEventListener('click', () => {
-		// Obtenemos el valor del atributo 'data-url'
 		const url = item.getAttribute('data-url')
-
-		// Si existe una URL, abrimos en una nueva pestaña
 		if (url) {
 			window.open(url, '_blank')
 		}
