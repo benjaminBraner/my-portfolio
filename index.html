@@ -6,7 +6,7 @@
      <meta charset="utf-8">
      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-     <link rel="stylesheet" type="text/css" href="index.css">
+     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
 <body class="light-theme">
@@ -289,91 +289,7 @@
 
 
 
-     <script>
-
-// Obtener el checkbox
-const themeToggle = document.getElementById('themeToggle');
-
-// Agregar un listener para detectar el cambio de tema
-themeToggle.addEventListener('click', toggleTheme);
-
-// Función para alternar entre dark y light theme
-function toggleTheme() {
-    const body = document.body;
-    if (body.classList.contains('dark-theme')) {
-        body.classList.remove('dark-theme');
-        body.classList.add('light-theme');
-    } else {
-        body.classList.remove('light-theme');
-        body.classList.add('dark-theme');
-    }
-}
-
-
-
-          document.addEventListener("DOMContentLoaded", function () {
-               const navbar = document.querySelector(".navbar");
-
-               window.addEventListener("scroll", function () {
-                    if (window.scrollY === 0) {
-                         navbar.classList.remove("navbar--shadow");
-                    } else {
-                         navbar.classList.add("navbar--shadow");
-                    }
-               });
-          });
-
-          const menu = document.querySelector("#mobile-menu");
-          const menuLinks = document.querySelector(".navbar__menu");
-          menu.addEventListener("click", () => {
-               menu.classList.toggle("is-active");
-               menuLinks.classList.toggle("active");
-          })
-
-          const contactBtn = document.querySelector(".button")
-          contactBtn.addEventListener("click", () => {
-               menuLinks.classList.toggle("active")
-          })
-
-          const navbarLinks = document.querySelectorAll(".navbar__links")
-          navbarLinks.forEach(link => {
-
-               link.addEventListener('click', () => {
-                    menuLinks.classList.toggle("active");
-               });
-          });
-
-
-          const projectContainers = document.querySelectorAll('.project-container');
-
-          projectContainers.forEach(container => {
-
-               const url = container.dataset.url;
-
-               container.addEventListener('click', () => {
-                    window.open(url, '_blank');
-               });
-          });
-
-
-
-          // Seleccionamos todos los elementos con la clase 'item'
-const items = document.querySelectorAll('.item');
-
-// Añadimos un evento de clic a cada 'item'
-items.forEach(item => {
-    item.addEventListener('click', () => {
-        // Obtenemos el valor del atributo 'data-url'
-        const url = item.getAttribute('data-url');
-        
-        // Si existe una URL, abrimos en una nueva pestaña
-        if (url) {
-            window.open(url, '_blank');
-        }
-    });
-});
-
-     </script>
+     <script src="script.js"></script>
      <script src="https://kit.fontawesome.com/802bbb6821.js" crossorigin="anonymous"></script>
 </body>
 
