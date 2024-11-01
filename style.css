@@ -62,10 +62,10 @@ section {
      align-items: center;
      font-size: 1.3rem;
      position: sticky;
-     top: 20px;
+     top: 14px;
      /* margin: 20px; */
      z-index: 999;
-     width: 90%;
+     width: 95%;
      border-radius: 50px;
      margin: auto;
      transition: all 0.5s ease;
