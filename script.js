@@ -1,67 +1,29 @@
-// Theme-----------------------------------------------------------
-const themeToggle = document.getElementById('themeToggle')
-
-themeToggle.addEventListener('click', toggleTheme)
-
-function toggleTheme() {
-	const body = document.body
-	if (body.classList.contains('dark-theme')) {
-		body.classList.remove('dark-theme')
-		body.classList.add('light-theme')
-	} else {
-		body.classList.remove('light-theme')
-		body.classList.add('dark-theme')
-	}
-}
 
 
-// Navbar scroll-----------------------------------------------------------
+//Navbar hidden---------------------------------------------------------------------------------
+let lastScrollY = window.scrollY
 
-document.addEventListener('DOMContentLoaded', function () {
+window.addEventListener('scroll', () => {
 	const navbar = document.querySelector('.navbar')
 
-	window.addEventListener('scroll', function () {
-		if (window.scrollY === 0) {
-			navbar.classList.add('navbar-on-top')
-		} else {
-			navbar.classList.remove('navbar-on-top')
+	const currentScrollY = window.scrollY
 
-		}
-	})
+	if (currentScrollY > lastScrollY && currentScrollY > 50) {
+		navbar.classList.add('navbar--hidden')
+	} else {
+		navbar.classList.remove('navbar--hidden')
+	}
+
+	lastScrollY = currentScrollY
 })
 
 
-//Navbar hidden
-let lastScrollY = window.scrollY;
-
-window.addEventListener('scroll', () => {
-  const navbar = document.querySelector('.navbar');
-  
-  const currentScrollY = window.scrollY;
-  
-  if (currentScrollY > lastScrollY && currentScrollY > 50) {
-    navbar.classList.add('navbar--hidden');
-  } 
-  else {
-    navbar.classList.remove('navbar--hidden');
-  }
-  
-  lastScrollY = currentScrollY;
-});
-
-
-
-
+//Navbar link active---------------------------------------------------------------------------------
 
 const menu = document.querySelector('#mobile-menu')
 const menuLinks = document.querySelector('.navbar__menu')
 menu.addEventListener('click', () => {
 	menu.classList.toggle('is-active')
-	menuLinks.classList.toggle('active')
-})
-
-const contactBtn = document.querySelector('.button')
-contactBtn.addEventListener('click', () => {
 	menuLinks.classList.toggle('active')
 })
 
@@ -72,23 +34,107 @@ navbarLinks.forEach((link) => {
 	})
 })
 
-const projectContainers = document.querySelectorAll('.project-container')
 
-projectContainers.forEach((container) => {
-	const url = container.dataset.url
 
-	container.addEventListener('click', () => {
-		window.open(url, '_blank')
-	})
-})
+//Text reveal---------------------------------------------------------------------------------
 
-const items = document.querySelectorAll('.item')
+function revealTextOnScroll() {
+	const textSpan = document.querySelector(".about__details span");
+	if (!textSpan) return;
+ 
+	const rect = textSpan.getBoundingClientRect();
+	const windowHeight = window.innerHeight;
+ 
+	let progress = (windowHeight - rect.top) / (windowHeight * 0.8); 
+	
+	progress = Math.min(1, Math.max(0, progress));
+ 
+	textSpan.style.backgroundSize = `${progress * 100}% 100%`;
+ }
+ 
+ window.addEventListener("scroll", revealTextOnScroll);
+ window.addEventListener("load", revealTextOnScroll);
+ 
 
-items.forEach((item) => {
-	item.addEventListener('click', () => {
-		const url = item.getAttribute('data-url')
-		if (url) {
-			window.open(url, '_blank')
+//Relocate main image---------------------------------------------------------------------------------
+
+function relocateImage() {
+	const profileHeader = document.querySelector(".profile-header");
+	const mainContent = document.querySelector(".main__content");
+	const img = document.querySelector(".profile-header img") || document.querySelector(".main__content > img");
+ 
+	if (!img) return; 
+ 
+	if (!img.dataset.originalIndex) {
+	    img.dataset.originalIndex = [...profileHeader.children].indexOf(img);
+	}
+ 
+	if (window.innerWidth <= 768) {
+	    if (profileHeader.contains(img)) {
+		   mainContent.insertBefore(img, profileHeader); 
+	    }
+	} else {
+	    if (!profileHeader.contains(img)) {
+		   const originalIndex = parseInt(img.dataset.originalIndex, 10);
+		   profileHeader.insertBefore(img, profileHeader.children[originalIndex] || null);
+	    }
+	}
+ }
+ 
+ window.addEventListener("resize", relocateImage);
+ window.addEventListener("load", relocateImage);
+ 
+
+//Current year--------------------------------------------------------------------------------
+
+document.addEventListener('DOMContentLoaded', function () {
+	const elements = document.querySelectorAll('.tech-date')
+
+	elements.forEach((element) => {
+		const text = element.textContent.trim()
+		const parts = text.split('-')
+
+		if (parts.length > 1) {
+			element.textContent = `${parts[0]} - ${new Date().getFullYear()}`
 		}
 	})
 })
+
+//Change background color on scroll--------------------------------------------------------------------------------
+
+document.addEventListener("DOMContentLoaded", function () {
+	const titleContainer = document.querySelector(".projects__title-container");
+ 
+	function updateBackgroundColor() {
+	    const rect = titleContainer.getBoundingClientRect();
+	    const screenHeight = window.innerHeight;
+ 
+	    if (rect.top < screenHeight / 2) {
+		   document.body.style.backgroundColor = "black"; 
+	    } else {
+		   document.body.style.backgroundColor = "white"; 
+	    }
+	}
+ 
+	window.addEventListener("scroll", updateBackgroundColor);
+	window.addEventListener("resize", updateBackgroundColor);
+	updateBackgroundColor(); 
+ });
+ 
+ 
+ 
+ 
+ //Project image link--------------------------------------------------------------------------------
+ 
+ 
+ document.addEventListener("DOMContentLoaded", () => {
+	document.querySelectorAll(".item-image").forEach(img => {
+	    img.addEventListener("click", () => {
+		   const url = img.getAttribute("url");
+		   if (url) {
+			  window.open(url, "_blank");
+		   }
+	    });
+	});
+ });
+ 

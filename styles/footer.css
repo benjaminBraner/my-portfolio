@@ -1,0 +1,24 @@
+
+.footer {
+     background-color: var(--box-color);
+     color: var(--dark-text-color);
+     text-align: center;
+     font-weight: 600;
+     padding: 2rem 0;
+}
+
+.footer__title {
+     font-size: 1.5rem;
+     margin-bottom: 7px;
+}
+
+.footer__social {
+     margin-bottom: 7px;
+     display: flex;
+     gap: 15px;
+     justify-content: center;
+}
+
+.hello {
+     font-size: 90px;
+}

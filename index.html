@@ -1,306 +1,169 @@
 <!DOCTYPE html>
 <html>
+	<head>
+		<title>Ben Braner</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+		<link rel="stylesheet" href="./styles/core.css" />
+		<link rel="stylesheet" href="./styles/navbar.css" />
+		<link rel="stylesheet" href="./styles/main.css" />
+		<link rel="stylesheet" href="./styles/about.css" />
+		<link rel="stylesheet" href="./styles/message.css" />
+		<link rel="stylesheet" href="./styles/stack.css" />
+		<link rel="stylesheet" href="./styles/projects.css" />
+		<link rel="stylesheet" href="./styles/contact.css" />
+		<link rel="stylesheet" href="./styles/footer.css" />
+	</head>
+	<body class="light-theme">
+		<!-- navbar section -->
+		<nav class="navbar navbar--shadow">
+			<div class="navbar__container">
+				<div class="navbar__toggle" id="mobile-menu">
+					<span class="bar"></span>
+					<span class="bar"></span>
+					<span class="bar"></span>
+				</div>
+				<ul class="navbar__menu">
+					<li class="navbar__left-container">
+						<a href="#home" class="navbar__links btn-white-nav">Home</a>
+						<a href="#about" class="navbar__links">About</a>
+						<a href="#stack" class="navbar__links">Stack</a>
+					</li>
+					<li class="navbar__right-container">
+						<a href="#projects" class="navbar__links">Projects</a>
+						<a href="#contact" class="navbar__links">Contact</a>
+						<a href="cv.html" class="navbar__links btn-black-nav" target="_blank">CV</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
 
-<head>
-     <title>Ben Braner</title>
-     <meta charset="utf-8">
-     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-     <link rel="stylesheet" type="text/css" href="style.css">
-</head>
+		<!-- hero section -->
+		<section class="main" id="home">
+			<div class="main__content">
+				<h1 class="profile-header">
+					<span>Hey, I'm</span>
+					<img src="assets/icons/react.svg" alt="Profile" />
+					<span> Benjamin</span>
+				</h1>
+				<h1 class="subtitle">React developer crafting<br />modern web experiences</h1>
+			</div>
+		</section>
 
-<body class="light-theme">
-     <!-- navbar section -->
-     <nav class="navbar navbar--shadow">
-          <div class="navbar__container">
-               <a href="/" id="navbar__logo"></i>Ben Braner</a>
-               <div class="navbar__toggle" id="mobile-menu">
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-               </div>
-               <ul class="navbar__menu">
-                    <li class="navbar__item">
-                         <a href="#home" class="navbar__links">Home</a>
-                    </li>
-                    <li class="navbar__item">
-                         <a href="#skills" class="navbar__links">Skills</a>
-                    </li>
-                    <li class="navbar__item">
-                         <a href="#portfolio" class="navbar__links">Portfolio</a>
-                    </li>
-                    <li class="navbar__item">
-                         <a href="#services" class="navbar__links">Services</a>
-                    </li>
-                    <li class="navbar__btn">
-                         <a href="#contact" class="button">Contact</a>
-                    </li>
-<li class=" navbar__item theme">
-  <input type="checkbox" class="input" id="themeToggle">
-  <img src="./assets/moon.svg" alt="" class="icon icon-toggle-theme icon-moon">
-  <img src="./assets/sun.svg" alt="" class="icon icon-toggle-theme icon-sun">
-</li>
-               </ul>
-          </div>
-     </nav>
+		<!-- About Me -->
+		<section class="about" id="about">
+			<p class="about__details">
+				<span> I am a frontend developer passionate about technology with 2+ years of React experience, including freelance work .I thrive on learning, tackling challenges, and contributing to high-performing teams. </span>
+			</p>
+		</section>
 
+		<!-- Message Section -->
+		<section class="message">
+			<div class="floating-elements"></div>
+			<div class="content-wrapper">
+				<h3>When working with me</h3>
+				<p>you will get a modern website that is responsive, secure, meets the needs of your clients, reflects your brand and its values and stands out among competitors</p>
+				<a href="cv.html" class="cta-button" target="_blank">Watch CV</a>
+			</div>
+		</section>
+		
+		<!-- Stack Section -->
+		<section class="stack" id="stack">
+			<h3>My Stack of Technologies I've used</h3>
+			<div class="technology-container">
+				<div class="tec-img-container"><img src="./assets/icons/html.svg" alt="" /></div>
+				<p class="tech-title">HTML</p>
+				<h4>The Web Core</h4>
+				<p class="tech-date">2019-2023</p>
+				<p class="tech-desc">The backbone of the web. I craft clean, semantic, and accessible markup to build structured and SEO-friendly websites.</p>
+			</div>
+			<div class="technology-container">
+				<div class="tec-img-container"><img src="./assets/icons/css.svg" alt="" /></div>
+				<p class="tech-title">CSS</p>
+				<h4>Style & Beauty</h4>
+				<p class="tech-date">2019-2023</p>
+				<p class="tech-desc">Bringing designs to life with responsive, modern, and pixel-perfect styling. I specialize in frameworks like Tailwind CSS for efficiency and scalability.</p>
+			</div>
+			<div class="technology-container">
+				<div class="tec-img-container"><img src="./assets/icons/js.svg" alt="" /></div>
+				<p class="tech-title">JavaScript</p>
+				<h4>Interactivity</h4>
+				<p class="tech-date">2020-2023</p>
+				<p class="tech-desc">The engine behind interactivity. I write clean, optimized, and modular JavaScript to create smooth and dynamic user experiences.</p>
+			</div>
+			<div class="technology-container">
+				<div class="tec-img-container"><img src="./assets/icons/react.svg" alt="" /></div>
+				<p class="tech-title">React.js</p>
+				<h4>Scalable Interfaces</h4>
+				<p class="tech-date">2021-2023</p>
+				<p class="tech-desc">My go-to framework for building fast, scalable, and high-performing web applications. I leverage Next.js for server-side rendering and optimized performance.</p>
+			</div>
+			<div class="technology-container">
+				<div class="tec-img-container"><img src="./assets/icons/git.svg" alt="" /></div>
+				<p class="tech-title">Git & GitHub</p>
+				<h4>Control & Collaboration</h4>
+				<p class="tech-date">2020-2023</p>
+				<p class="tech-desc">Version control is key. I use Git to manage code efficiently and GitHub for collaboration, CI/CD workflows, and open-source contributions.</p>
+			</div>
+		</section>
 
+		<!-- Projects Section -->
+		<section class="projects" id="projects">
+			<div class="projects__title-container">
+				<h3>What you can expect</h3>
+				<h3>from me</h3>
+			</div>
+			<div class="wrapper">
+				<div class="item item1">
+					<img src="assets/images/proyecto-doblerapp.jpg" alt="Project 1" class="item-image" url="https://dobler.netlify.app/"/>
+				</div>
+				<div class="item item2">
+					<img src="assets/images/proyecto-gymshark.jpg" alt="Project 2" class="item-image" url="https://gymshark-app.netlify.app/"/>
+				</div>
+				<div class="item item3">
+					<img src="assets/images/proyecto-servforu.png" alt="Project 3" class="item-image" url="https://servforu.netlify.app"/>
+				</div>
+				<div class="item item4">
+					<img src="assets/images/proyecto-journal.png" alt="Project 4" class="item-image" url="https://journal-benjamin.netlify.app"/>
+				</div>
+				<div class="item item5">
+					<img src="assets/images/proyecto-plantsapp.png" alt="Project 5" class="item-image" url="https://your-tree.netlify.app/"/>
+				</div>
+				<div class="item item6">
+					<img src="assets/images/proyecto-heroesapp.png" alt="Project 6" class="item-image" url="https://heroes-search-app.netlify.app"/>
+				</div>
+			</div>
+		</section>
 
-     <!-- hero section -->
-     <section class="main  animate__animated animate__fadeIn" id="home">
-          <div class="main__content">
-               <h1 class="main__name">Front-end React developer</h1>
-               <p class="main__desc">Hi, I'm Benjamin Braner. A passionate Front-end React
-                    developer based in Santa Cruz - Bolivia
-               </p>
-               <a href="benjamin-braner-CV.pdf" download>
-                    <button class="main__btn">Download CV </button>
-               </a>
-               <a href="#portfolio">
-                    <button class="main__btn btn-portfolio">Portfolio </button>
-               </a>
-          </div>
-          <div class="main__img--container">
-               <img src="./assets/man-computer.png" alt="" id="main__img">
-          </div>
-     </section>
+		<!-- Contact section -->
+		<section class="contact animate__animated animate__fadeIn" id="contact">
+			<h4 class="section__title">Lets push<br /> things <span>forward</span></h4>
+			<div class="contact-msg-container">
+				<div>
+					<p>Great projects start with a conversation. Whether you have an idea, need web development help, or just want to chat tech, let’s connect. Let’s build something amazing together—reach out anytime!</p>
+					<div class="contact-info">
+						<p>benjamin.branner@gmail.com</p>
+						<p>+591 76051713</p>
+					</div>
+				</div>
+			</div>
+		</section>
 
-
-
-     <!-- About Me -->
-     <section class="about">
-          <div class="section__container about__container">
-               <div class="about__image">
-                    <img src="assets/man-headphones.png" alt="about" />
-               </div>
-               <div class="about__content">
-                    <h2 class="section__title">About <span>Me</span></h2>
-                    <p class="section__subtitle">Web Developer</p>
-                    <div class="about-containers">
-                         <div class="details-container">
-                           <img
-                             src="./assets/experience.png"
-                             alt="Experience icon"
-                             class="icon icon-aboutme"
-                           />
-                           <h3>Experience</h3>
-                           <p>2+ years <br />Frontend Development</p>
-                         </div>
-                         <div class="details-container">
-                           <img
-                             src="./assets/education.png"
-                             alt="Education icon"
-                             class="icon icon-aboutme"
-                           />
-                           <h3>Education</h3>
-                           <p>UEB Colleage student</p>
-                         </div>
-                       </div>
-                    <p class="about__details">
-                         I'm a junior developer passionate about React. I am eager to learn and grow in the field. I am
-                         a quick learner and have great problem-solving skills. I am motivated to work on challenging
-                         projects and contribute to high-performing teams. My goal is to become a senior React developer
-                         and contribute to innovative web projects. I am looking for opportunities to work with talented
-                         teams and learn from the best.
-                    </p>
-               </div>
-          </div>
-     </section>
-
-
-
-     <!-- Attributes Section -->
-     <section class="attributes" id="services">
-          <div class="attribute-container">
-               <img class="icon attribute-logo" src="./assets/devices.svg" alt="attribute-logo">
-               <h3 class="attribute-title">Web Design</h3>
-               I am dedicated to providing high-quality web design services
-               that are tailored to meet the specific needs of my clients.
-          </div>
-          <div class="attribute-container">
-               <img class="icon attribute-logo" src="./assets/brush.svg" alt="attribute-logo">
-               <h3 class="attribute-title">Web Development</h3>
-               I use the latest web technologies and development tools to create
-               websites that are fast, secure, and scalable.
-          </div>
-          <div class="attribute-container three">
-               <img class="icon attribute-logo" src="./assets/bulb.svg" alt="attribute-logo">
-               <h3 class="attribute-title">Creative Design</h3>
-               My approach is responsive, and I encourage your feedback throughout the design process to ensure that I
-               am meeting your expectations.
-          </div>
-     </section>
-
-
-
-     <!-- Skills Section -->
-     <section class="skills animate__animated animate__fadeIn" id="skills">
-          <div class="skills__text">
-               <h4 class="section__title ">Skills</h4>
-               <p class="skills__desc">These are the technologies that I have learned over time
-               <div class="technology">
-                    <div class="tech-container">
-                         <img src="./assets/html.svg" alt="html" class="icon">
-                         HTML
-                    </div>
-                    <div class="skill-percentage">95%</div>
-               </div>
-               <div class="technology">
-                    <div class="tech-container">
-                         <img src="./assets/css.svg" alt="css" class="icon">
-                         CSS
-
-                    </div>
-                    <div class="skill-percentage">87%</div>
-               </div>
-               <div class="technology">
-                    <div class="tech-container">
-                         <img src="./assets/js.svg" alt="javascript" class="icon">
-                         JAVASCRIPT
-
-                    </div>
-                    <div class="skill-percentage">90%</div>
-               </div>
-               <div class="technology">
-                    <div class="tech-container">
-                         <img src="./assets/react.svg" alt="react" class="icon">
-                         REACT
-
-                    </div>
-                    <div class="skill-percentage">73%</div>
-               </div>
-               <div class="technology">
-                    <div class="tech-container">
-                         <img src="./assets/git.svg" alt="git" class="icon">
-                         GIT
-                    </div>
-                    <div class="skill-percentage">88%</div>
-               </div>
-          </div>
-          </div>
-          <div class="skills_img-container">
-               <img class="skills_img" src="./assets/man-headphones.png" alt="">
-          </div>
-     </section>
+		<!-- Footer section -->
+		<footer class="footer">
+			<p class="footer__title">Benjamin</p>
+			<div class="footer__social">
+				<a href="https://www.instagram.com/benjaminbraner/" class="footer__icon"><img src="./assets/icons/instagram.svg" alt="instagram" class="icon" /></a>
+				<a href="https://wa.me/+59176051713" class="footer__icon"><img src="./assets/icons/whatsapp.svg" alt="whatsapp" class="icon" /></a>
+				<a href="https://www.facebook.com/benjamin.brennermolina" class="footer__icon"><img src="./assets/icons/facebook.svg" alt="facebook" class="icon" /></a>
+				<a href="https://www.linkedin.com/in/benjamin-braner-molina-60695b245/" class="footer__icon"><img src="./assets/icons/linkedin.svg" alt="linkedin" class="icon" /></a>
+			</div>
+			<p>benjamin.branner@gmail.com</p>
+			<p>+591 76051713</p>
+		</footer>
 
 
-
-     <!-- Projects Section -->
-     <section class="portfolio animate__animated animate__fadeIn" id="portfolio">
-          <h4 class="skills__title">Projects</h4>
-          <div class="projects">
-               
-               <div class="project-container" data-url="https://dobler.netlify.app/">
-                    <img class="project-img" src="./assets/proyecto-doblerapp.jpg" alt="">
-                    <div class="project-desc">
-                         <div class="project-features">
-                              <h4 class="project-title">Barbershop</h4>
-                              <p>REACT JS</p>
-                         </div>
-                    </div>
-               </div>
-               
-               <div class="project-container" data-url="https://gymshark-app.netlify.app/">
-                    <img class="project-img" src="./assets/proyecto-gymshark.jpg" alt="gymshark">
-                    <div class="project-desc">
-                         <div class="project-features">
-                              <h4 class="project-title">Gym Wear Shop</h4>
-                              <p>HTML, CSS, JS advanced</p>
-                         </div>
-                    </div>
-               </div>
-               
-               <div class="project-container" data-url="https://your-tree.netlify.app/">
-                    <img class="project-img" src="./assets/proyecto-plantsapp.png" alt="YourTree">
-                    <div class="project-desc">
-                         <div class="project-features">
-                              <h4 class="project-title">Plants E-commerce</h4>
-                              <p>REACT JS</p>
-                         </div>
-                    </div>
-               </div>
-               
-               <div class="project-container" data-url="https://servforu.netlify.app">
-                    <img class="project-img" src="./assets/proyecto-servforu.png" alt="ServForU">
-                    <div class="project-desc">
-                         <div class="project-features">
-                              <h4 class="project-title">Request to digitalize your business</h4>
-                              <p>REACT JS</p>
-                         </div>
-                    </div>
-               </div>
-
-               <div class="project-container" data-url="https://heroes-search-app.netlify.app">
-                    <img class="project-img" src="./assets/proyecto-heroesapp.png" alt="">
-                    <div class="project-desc">
-                         <div class="project-features">
-                              <h4 class="project-title">Heroes App</h4>
-                              <p>REACT JS</p>
-                         </div>
-                    </div>
-               </div>
-               
-               <div class="project-container" data-url="https://journal-benjamin.netlify.app">
-                    <img class="project-img" src="./assets/proyecto-journal.png" alt="">
-                    <div class="project-desc">
-                         <div class="project-features">
-                              <h4 class="project-title">Journal App</h4>
-                              <p>REACT JS</p>
-                         </div>
-                    </div>
-               </div>
-               
-          </div>
-          </section>    
-
-
-
-<!-- Contact section -->
-     <section class="contact animate__animated animate__fadeIn" id="contact">
-          <h4 class="section__title">Contact me</h4>
-          <div class="form-container">
-               <form action="https://formsubmit.co/benjamin.branner@gmail.com" class="contact__form" method="POST">
-                    <input type="text" placeholder="Name" class="contact__input" name="name" autocomplete="off">
-                    <input type="email" placeholder="Email" class="contact__input" name="email" autocomplete="off">
-                    <textarea name="comments" cols="30" rows="10" placeholder="Message"
-                         class="contact__input"></textarea>
-                    <input value="Send" type="submit" class="contact__input btn-send-form">
-                    <input type="hidden" name="_next" value="https://benbraner.netlify.app/">
-                    <input type="hidden" name="_captcha" value="false">
-               </form>
-          </div>
-     </section>
-
-
-<!-- Footer section -->
-     <footer class="footer">
-          <p class="footer__title">Benjamin</p>
-          <div class="footer__social">
-               <a href="https://www.instagram.com/benjaminbraner/" class="footer__icon"><img
-                         src="./assets/instagram.svg" alt="instagram" class="icon"></a>
-               <a href="https://wa.me/+59176051713" class="footer__icon"><img src="./assets/whatsapp.svg"
-                         alt="whatsapp" class="icon"></a>
-               <a href="https://www.facebook.com/benjamin.brennermolina" class="footer__icon"><img
-                         src="./assets/facebook.svg" alt="facebook" class="icon"></a>
-               <a href="https://www.linkedin.com/in/benjamin-braner-molina-60695b245/" class="footer__icon"><img
-                         src="./assets/linkedin.svg" alt="linkedin" class="icon"></a>
-          </div>
-          <p>benjamin.branner@gmail.com</p>
-          <p>+591 76051713</p>
-     </footer>
-
-
-
-     <link rel="preconnect" href="https://fonts.gstatic.com">
-     <link rel="preconnect" href="https://fonts.gstatic.com">
-     <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Kumbh+Sans:wght@400;700&display=swap"
-          rel="stylesheet">
-     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
-
-
-
-     <script src="script.js"></script>
-     <script src="https://kit.fontawesome.com/802bbb6821.js" crossorigin="anonymous"></script>
-</body>
-
+		<script src="script.js"></script>
+	</body>
 </html>
