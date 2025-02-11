@@ -35,27 +35,6 @@ navbarLinks.forEach((link) => {
 })
 
 
-
-//Text reveal---------------------------------------------------------------------------------
-
-function revealTextOnScroll() {
-	const textSpan = document.querySelector(".about__details span");
-	if (!textSpan) return;
- 
-	const rect = textSpan.getBoundingClientRect();
-	const windowHeight = window.innerHeight;
- 
-	let progress = (windowHeight - rect.top) / (windowHeight * 0.8); 
-	
-	progress = Math.min(1, Math.max(0, progress));
- 
-	textSpan.style.backgroundSize = `${progress * 100}% 100%`;
- }
- 
- window.addEventListener("scroll", revealTextOnScroll);
- window.addEventListener("load", revealTextOnScroll);
- 
-
 //Relocate main image---------------------------------------------------------------------------------
 
 function relocateImage() {
@@ -84,6 +63,27 @@ function relocateImage() {
  window.addEventListener("resize", relocateImage);
  window.addEventListener("load", relocateImage);
  
+
+//Text reveal---------------------------------------------------------------------------------
+
+function revealTextOnScroll() {
+	const textSpan = document.querySelector(".about__details span");
+	if (!textSpan) return;
+ 
+	const rect = textSpan.getBoundingClientRect();
+	const windowHeight = window.innerHeight;
+ 
+	let progress = (windowHeight - rect.top) / (windowHeight * 0.8); 
+	
+	progress = Math.min(1, Math.max(0, progress));
+ 
+	textSpan.style.backgroundSize = `${progress * 100}% 100%`;
+ }
+ 
+ window.addEventListener("scroll", revealTextOnScroll);
+ window.addEventListener("load", revealTextOnScroll);
+ 
+
 
 //Current year--------------------------------------------------------------------------------
 
