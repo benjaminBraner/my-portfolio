@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Benjamin Braner - Frontend Developer</title>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/lucide/0.263.1/umd/lucide.min.js"></script>
+
+		<style>
+				@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+
+			* {
+			    margin: 0;
+			    padding: 0;
+			    box-sizing: border-box;
+			    font-family: 'Inter', Tahoma, Geneva, Verdana, sans-serif;
+			}
+
+			:root {
+			    --primary-color: #1e293b;
+			    --secondary-color: #1e293b;
+			    --accent-color: #3b82f6;
+			    --background-color: #f0f9ff;
+			    --text-color: #1e293b;
+			    --light-text: #64748b;
+			}
+
+			body {
+			    background-color: var(--background-color);
+			    line-height: 1.6;
+			    color: var(--text-color);
+			}
+
+			.container {
+			    max-width: 1000px;
+			    margin: 2rem auto;
+			    padding: 2rem;
+			    background-color: white;
+			    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+			    border-radius: 8px;
+			}
+
+			header {
+			    text-align: center;
+			    margin-bottom: 2rem;
+			    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+			    padding: 2rem;
+			    border-radius: 8px;
+			    color: white;
+			}
+
+			.profile-photo {
+			    width: 150px;
+			    height: 150px;
+			    border-radius: 50%;
+			    margin: 0 auto 1rem;
+			    border: 4px solid white;
+			    background-color: #e5e7eb;
+			    overflow: hidden;
+			    display: flex;
+			    align-items: center;
+			    justify-content: center;
+			}
+
+			.profile-photo img {
+			    width: 100%;
+			    height: 100%;
+			    object-fit: cover;
+			}
+
+			h1 {
+			    font-size: 2.5rem;
+			    margin-bottom: 0.5rem;
+			    color: white;
+			}
+
+			.subtitle {
+			    color: #e5e7eb;
+			    font-size: 1.2rem;
+			    margin-bottom: 1rem;
+			}
+
+			.contact-info {
+			    display: flex;
+			    justify-content: center;
+			    gap: 2rem;
+			    flex-wrap: wrap;
+			    margin-bottom: 1rem;
+			}
+
+			.contact-info a {
+			    color: white;
+			    text-decoration: none;
+			    transition: color 0.3s;
+			}
+
+			.contact-info a:hover {
+			    color: #bfdbfe;
+			}
+
+			.main-grid {
+			    display: grid;
+			    grid-template-columns: 1fr 2fr;
+			    gap: 2rem;
+			}
+
+			.section {
+			    margin-bottom: 2rem;
+			}
+
+			h2 {
+			    color: var(--primary-color);
+			    margin-bottom: 1rem;
+			    padding-bottom: 0.5rem;
+			    border-bottom: 2px solid var(--accent-color);
+			}
+
+			.left-column h2{
+			    color: #fff;
+			    border-bottom: 2px solid #fff;
+			}
+			.right-column h2{
+			    color: #1e293b;
+			    border-bottom: 2px solid #1e293b;
+			}
+
+			.skills-list {
+			    list-style: none;
+			}
+
+			.skill-item {
+			    margin-bottom: 1rem;
+			}
+
+			.skill-info {
+			    display: flex;
+			    justify-content: space-between;
+			    margin-bottom: 0.5rem;
+			}
+
+			.skill-bar {
+			    width: 100%;
+			    height: 8px;
+			    background-color: #e5e7eb;
+			    border-radius: 4px;
+			    overflow: hidden;
+			}
+
+			.skill-progress {
+			    height: 100%;
+			    background-color: #818181;
+			    border-radius: 4px;
+			    transition: width 1s ease-in-out;
+			}
+
+			.education-item {
+			    margin-bottom: 1rem;
+			    padding: 1rem;
+			    background-color: var(--background-color);
+			    border-radius: 4px;
+			}
+
+			.education-item h3 {
+			    color: #1e293b;
+			    margin-bottom: 0.5rem;
+			}
+
+			.hobbies-grid {
+			    display: grid;
+			    grid-template-columns: repeat(4, 1fr);
+			    gap: 1rem;
+			    margin-top: 1rem;
+			}
+
+			.hobby-item {
+			    display: flex;
+			    flex-direction: column;
+			    align-items: center;
+			    text-align: center;
+			    padding: 1rem;
+			    background-color: var(--background-color);
+			    border-radius: 8px;
+			    transition: transform 0.2s;
+			}
+
+			.hobby-item:hover {
+			    transform: translateY(-5px);
+			    background-color: #dbeafe;
+			}
+
+			.hobby-icon {
+			    margin-bottom: 0.5rem;
+			    color: var(--primary-color);
+			}
+
+			@media (max-width: 768px) {
+			    .main-grid {
+			        grid-template-columns: 1fr;
+			    }
+
+			    .container {
+			        margin: 1rem;
+			        padding: 1rem;
+			    }
+
+			    header {
+			        padding: 1rem;
+			    }
+
+			    .profile-photo {
+			        width: 120px;
+			        height: 120px;
+			    }
+
+			    .hobbies-grid {
+			        grid-template-columns: repeat(2, 1fr);
+			    }
+			}
+
+			.left-column{
+			    background-color: #1e293b;
+			    padding: 20px;
+			    border-radius: 10px;
+			}
+			.left-column > * {
+			    color: #d6d6d6
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<header>
+				<div class="profile-photo">
+					<img src="/api/placeholder/150/150" alt="" />
+				</div>
+				<h1>BENJAMIN BRANER</h1>
+				<div class="subtitle">FRONTEND DEV - WEB DESIGNER</div>
+				<div class="contact-info">
+					<a href="tel:+59176051713">+591 76051713</a>
+					<a href="mailto:benjamin.branner@gmail.com">benjamin.branner@gmail.com</a>
+					<a href="https://benbraner.netlify.app" target="_blank">My Website</a>
+				</div>
+			</header>
+
+			<div class="main-grid">
+				<div class="left-column">
+					<div class="section">
+						<h2>PROFILE</h2>
+						<p>Frontend developer and web designer with the ability to think creatively and strong attention to detail</p>
+					</div>
+
+					<div class="section">
+						<h2>SKILLS</h2>
+						<div class="skills-list">
+							<div class="skill-item">
+								<div class="skill-info">
+									<span>Web Design</span>
+								</div>
+								<div class="skill-bar">
+									<div class="skill-progress" style="width: 90%"></div>
+								</div>
+							</div>
+							<div class="skill-item">
+								<div class="skill-info">
+									<span>HTML</span>
+								</div>
+								<div class="skill-bar">
+									<div class="skill-progress" style="width: 100%"></div>
+								</div>
+							</div>
+							<div class="skill-item">
+								<div class="skill-info">
+									<span>CSS</span>
+								</div>
+								<div class="skill-bar">
+									<div class="skill-progress" style="width: 99%"></div>
+								</div>
+							</div>
+							<div class="skill-item">
+								<div class="skill-info">
+									<span>JAVASCRIPT</span>
+								</div>
+								<div class="skill-bar">
+									<div class="skill-progress" style="width: 96%"></div>
+								</div>
+							</div>
+							<div class="skill-item">
+								<div class="skill-info">
+									<span>REACT</span>
+								</div>
+								<div class="skill-bar">
+									<div class="skill-progress" style="width: 87%"></div>
+								</div>
+							</div>
+							<div class="skill-item">
+								<div class="skill-info">
+									<span>GIT</span>
+								</div>
+								<div class="skill-bar">
+									<div class="skill-progress" style="width: 70%"></div>
+								</div>
+							</div>
+							<div class="skill-item">
+								<div class="skill-info">
+									<span>English</span>
+								</div>
+								<div class="skill-bar">
+									<div class="skill-progress" style="width: 99%"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="right-column">
+					<div class="section">
+						<h2>EXPERIENCE</h2>
+						<p>Programming student with skills in web development stack, control version with git. With projects to corroborate said information. Willing to learn and with an advanced level of English and native Spanish.</p>
+					</div>
+
+					<div class="section">
+						<h2>EDUCATION</h2>
+						<div class="education-item">
+							<h3>UNIVALLE</h3>
+							<p>Student</p>
+						</div>
+						<div class="education-item">
+							<h3>UDEMY</h3>
+							<p>COURSE REACTJS (50 HRS)</p>
+						</div>
+						<div class="education-item">
+							<h3>FREECODECAMP</h3>
+							<p>RESPONSIVE WEB DESIGN</p>
+						</div>
+						<div class="education-item">
+							<h3>OTHER</h3>
+							<p>GIT & GITHUB (8HRS)</p>
+						</div>
+					</div>
+
+					<div class="section">
+						<h2>HOBBIES</h2>
+						<div class="hobbies-grid">
+							<div class="hobby-item">
+								<img src="assets/icons/dumbbell.svg" alt="Gym" />
+								<span>Gym</span>
+							</div>
+							<div class="hobby-item">
+								<img src="assets/icons/code.svg" alt="Gym" />
+								<span>Code</span>
+							</div>
+							<div class="hobby-item">
+								<img src="assets/icons/soccer.svg" alt="Gym" />
+								<span>Football</span>
+							</div>
+							<div class="hobby-item">
+								<img src="assets/icons/music.svg" alt="Gym" />
+								<span>Music</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script>
+			// lucide.createIcons();
+		</script>
+	</body>
+</html>
