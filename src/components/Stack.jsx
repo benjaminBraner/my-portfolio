@@ -75,7 +75,7 @@ export default function Stack() {
                 id="react-cert-btn"
                 onClick={() => setCertOpen(true)}
               >
-                Ver Certificado
+                Certificate
               </span>
             )}
           </h4>

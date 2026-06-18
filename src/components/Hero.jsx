@@ -34,8 +34,8 @@ export default function Hero() {
     <section className="main" id="home">
       <div className="main__content" ref={mainContentRef}>
         <h1 className="profile-header" ref={profileHeaderRef}>
-          <span>Hey, I'm</span>
-          <img ref={imgRef} src="/assets/icons/react.svg" alt="Profile" />
+          <span>Hey, I'm </span>
+          <img ref={imgRef} src="/assets/images/front-1-2-bw.jpeg" alt="Profile" />
           <span> Benjamin</span>
         </h1>
         <h1 className="subtitle">React developer crafting<br />modern web experiences</h1>
