@@ -1,12 +1,13 @@
 import { useBgColor } from '../hooks/useBgColor'
 
 const projects = [
-  { img: '/assets/images/proyecto-doblerapp.jpg',    alt: 'Project 1', url: 'https://dobler.netlify.app/',        className: 'item item1' },
+  { img: '/assets/images/proyecto-obr.png',    alt: 'Project 1', url: 'https://obr-srl.netlify.app/',        className: 'item item1' },
   { img: '/assets/images/proyecto-gymshark.jpg',     alt: 'Project 2', url: 'https://gymshark-app.netlify.app/', className: 'item item2' },
-  { img: '/assets/images/proyecto-servforu.png',     alt: 'Project 3', url: 'https://servforu.netlify.app',       className: 'item item3' },
+  { img: '/assets/images/proyecto-josema.png',     alt: 'Project 3', url: 'https://josemamealla.netlify.app/',       className: 'item item3' },
   { img: '/assets/images/proyecto-journal.png',      alt: 'Project 4', url: 'https://journal-benjamin.netlify.app', className: 'item item4' },
   { img: '/assets/images/todo-mockup.png',           alt: 'Project 5', url: 'https://todoit-app.netlify.app/',    className: 'item item5' },
   { img: '/assets/images/proyecto-plantsapp.png',    alt: 'Project 6', url: 'https://your-tree.netlify.app/',     className: 'item item6' },
+  
 ]
 
 export default function Projects() {
