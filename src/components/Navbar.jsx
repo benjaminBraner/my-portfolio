@@ -29,7 +29,7 @@ export default function Navbar() {
           <li className="navbar__right-container">
             <a href="#projects" className="navbar__links" onClick={closeMenu}>Projects</a>
             <a href="#contact" className="navbar__links" onClick={closeMenu}>Contact</a>
-            <a href="/cv.html" className="navbar__links btn-black-nav" target="_blank" rel="noreferrer" onClick={closeMenu}>CV</a>
+            <a href="/assets/Benjamin%20Braner%20CV.pdf" className="navbar__links btn-black-nav" target="_blank" rel="noopener noreferrer" onClick={closeMenu}>CV</a>
           </li>
         </ul>
       </div>

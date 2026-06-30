@@ -5,7 +5,7 @@ export default function Message() {
       <div className="content-wrapper">
         <h3>When working with me</h3>
         <p>you will get a modern website that is responsive, secure, meets the needs of your clients, reflects your brand and its values and stands out among competitors</p>
-        <a href="#projects" className="cta-button">See more Projects</a>
+        <a href="/assets/Benjamin%20Braner%20CV.pdf" target="_blank" rel="noopener noreferrer" className="cta-button">Watch CV</a>
       </div>
     </section>
   )
